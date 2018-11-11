@@ -343,11 +343,9 @@ client.on('message', message => {
     }
 });
 
-
-
-const developers = ["272808689688248320"]
+const developers = ["472413769700474901"]
 client.on('message', message => {
-    var argresult = message.content.split(`472413769700474901`).slice(1).join(' ');
+    var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
   if (message.content.startsWith(adminprefix + 'setg')) {
